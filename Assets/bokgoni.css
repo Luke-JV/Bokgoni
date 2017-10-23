@@ -285,6 +285,28 @@ body {
 	grid-template-rows: 150px 1fr 1fr;	
 }
 
+.gallerytab {
+	display: grid !important;
+	grid-gap: 25px !important;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto 250px 250px;	
+}
+
+.galleryimage{
+	height: 250px;
+	width: 250px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.galleryimage:hover{
+	height: 255px;
+	width: 255px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
 .historytab {
 	display: grid !important;
 	grid-gap: 25px !important;
@@ -299,6 +321,8 @@ body {
 	margin: 0 auto 0 auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
+
+
 
 .intro {
 	grid-column: 1/-1;
