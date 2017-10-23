@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Bokgoni Technical High School</title>
+		<script src="Scripts/jquery.min-3.2.1.js"></script>
+		<link rel=stylesheet href="Assets/bootstrap.min.css">
+		<script src="Scripts/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="Assets/bokgoni.css">
+	</head>
+	<body>
+		<div class="top">
+			<img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" />
+			<div class="name">Bokgoni Technical High School</div>
+			<div class="slogan">Educating the youth of Atteridgeville</div>
+		</div>
+		<ul class="nav nav-tabs">
+			<li><a class="navbtn" href="Home.html">HOME</a></li>
+			<li><a class="navbtn" href="History.html">HISTORY</a></li>
+			<li><a class="navbtn" href="Staff.html">STAFF</a></li>
+			<li class="active"><a class="navbtn" href="Academics.html">ACADEMICS</a></li>
+			<li><a class="navbtn" href="Gallery.html">GALLERY</a></li>
+			<li><a class="navbtn" href="Contact.html">CONTACT</a></li>
+		</ul>
+		<div class="content">
+			<hr class="bokgoni-hr" />
+			<div class="academicstab">
+				<div class="achievements content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Notable Achievements
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						<ul>
+							<li>The Principal has received the Best Principal award twice.</li>
+							<li>The School has received the Best Achievers Award 5 times.</li>
+							<li>Many educators in the fields of Mathematics, Technical Drawing, Welding, Bricklaying and Plastering have been acknowledged as the best in our district (4, Tshwane South) for producing the best Matric results.</li>
+							<li>Won the Macro School of excellence awards.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="lowergrades content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Subjects Grade 8-9
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						<ul>
+							<li>Sepedi</li>
+							<li>IsiZulu</li>
+							<li>English</li>
+							<li>Mathematics</li>
+							<li>Natural Sciences</li>
+							<li>Social Sciences</li>
+							<li>Technology</li>
+							<li>Arts and Culture</li>
+							<li>Life Orientation</li>
+							<li>EMS</li>
+						</ul>
+					</div>
+				</div>
+				<div class="highergrades content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Subjects Grade 10-12
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						<ul>
+							<li>Sepedi (Home Language)</li>
+							<li>IsiZulu (Home Language)</li>
+							<li>English (First Additional Language)</li>
+							<li>Mathematics</li>
+							<li>Physical Sciences</li>
+							<li>Engineering Graphic Design</li>
+							<li>Technology (Civil, Electrical and Mechanical)</li>							
+							<li>Life orientation</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="client">Bokgoni Technical High School</div>
+			<div class="ampersand">&amp;</div>
+			<div class="devs">UP Community Project 2017</div>
+		</div>
+	</body>
+	<script language="JavaScript" type="text/JavaScript">		
+		function myMap() {
+		    var mapOptions = {
+		        /*center: new google.maps.LatLng(-25.7643201,28.0851322),*/
+		        center: new google.maps.LatLng(-25.7646,28.0856),
+		        zoom: 17,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>
