@@ -7,11 +7,6 @@
 		<link rel=stylesheet href="Assets/bootstrap.min.css">
 		<script src="Scripts/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="Assets/bokgoni.css">
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="bokgoni.css">
-		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
 	</head>
 	<body>
 		<div class="top">
@@ -29,57 +24,133 @@
 		</ul>
 		<div class="content">
 			<hr class="bokgoni-hr" />
-			<div class="gallerytab">
-	  			
+			<div class="gallerytab">	  			
 	  			<div class="intro content-container">
 	  				<div class="intro-text">Gallery</div>
 	  				<div class="content-text" grid-row="2/-1">
-						A window into Bokgoni Technical High School
+						A window into Bokgoni Technical High School. Click a thumbnail to view the full image.
 					</div>
 	  			</div> 									
-	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/1.jpg"></div>
+	  			<div class="content-image content-container">	  				
+	  				<img id="img-1" onclick="this.blur(); viewImage(1)" class="galleryimage" src="Assets/Galleries/1.jpg">
+	  				<div id="img-modal-1" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>	  				
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/2.jpg"></div>
+					<img id="img-2" onclick="this.blur(); viewImage(2)" class="galleryimage" src="Assets/Galleries/2.jpg">
+					<div id="img-modal-2" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/3.jpg"></div>
+	  				<img id="img-3" onclick="this.blur(); viewImage(3)" class="galleryimage" src="Assets/Galleries/3.jpg">
+					<div id="img-modal-3" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/3.jpg"></div>
+	  				<img id="img-4" onclick="this.blur(); viewImage(4)" class="galleryimage" src="Assets/Galleries/3.jpg">
+					<div id="img-modal-4" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/2.jpg"></div>
+	  				<img id="img-5" onclick="this.blur(); viewImage(5)" class="galleryimage" src="Assets/Galleries/2.jpg">
+					<div id="img-modal-5" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/1.jpg"></div>
+	  				<img id="img-6" onclick="this.blur(); viewImage(6)" class="galleryimage" src="Assets/Galleries/1.jpg">
+					<div id="img-modal-6" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+	  			</div>
+	  			<div class="content-image content-container">	  				
+	  				<img id="img-7" onclick="this.blur(); viewImage(7)" class="galleryimage" src="Assets/Galleries/1.jpg">
+					<div id="img-modal-7" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+	  			</div>
+	  			<div class="content-image content-container">	  				
+	  				<img id="img-8" onclick="this.blur(); viewImage(8)" class="galleryimage" src="Assets/Galleries/2.jpg">
+					<div id="img-modal-8" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
 	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/1.jpg"></div>
+	  				<img id="img-9" onclick="this.blur(); viewImage(9)" class="galleryimage" src="Assets/Galleries/3.jpg">
+					<div id="img-modal-9" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
-	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/2.jpg"></div>
+	  			<div class="content-image content-container">	  				
+	  				<img id="img-10" onclick="this.blur(); viewImage(10)" class="galleryimage" src="Assets/Galleries/3.jpg">
+					<div id="img-modal-10" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	  			</div>
-	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/3.jpg"></div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				
-	  				<div class="content-text"><img class="galleryimage" src="Assets/Galleries/3.jpg"></div>
-	  			</div> 
-
-
-
 			</div>
 		</div>
 		<div class="foot">
@@ -87,5 +158,11 @@
 			<div class="ampersand">&amp;</div>
 			<div class="devs">UP Community Project 2017</div>
 		</div>
+		<script>
+			function viewImage(id){
+				var $id = id;
+				$('#img-modal-'+ $id).modal('show');
+			}
+		</script>
 	</body>
 </html>
