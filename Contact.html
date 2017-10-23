@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Bokgoni Technical High School</title>
+		<script src="Scripts/jquery.min-3.2.1.js"></script>
+		<link rel=stylesheet href="Assets/bootstrap.min.css">
+		<script src="Scripts/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="Assets/bokgoni.css">
+	</head>
+	<body>
+		<div class="top">
+			<img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" />
+			<div class="name">Bokgoni Technical High School</div>
+			<div class="slogan">Educating the youth of Atteridgeville</div>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a class="navbtn" href="Home.html">HOME</a></li>
+			<li><a class="navbtn" href="History.html">HISTORY</a></li>
+			<li><a class="navbtn" href="Staff.html">STAFF</a></li>
+			<li><a class="navbtn" href="Academics.html">ACADEMICS</a></li>
+			<li><a class="navbtn" href="Gallery.html">GALLERY</a></li>
+			<li><a class="navbtn" href="Contact.html">CONTACT</a></li>
+		</ul>
+		<div class="content">
+			<hr class="bokgoni-hr" />
+			<div class="contacttab">
+				<div class="visit content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Visit Us
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						<div id="map" class="map"></div>
+					</div>
+				</div>
+				<div class="contact content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Contact Us
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						Tel/Fax: (012) 373 8071
+					</div>
+				</div>
+				<div class="mail content-container">
+					<div class="content-heading" grid-row="1/-1">
+						Mail Us
+					</div>
+					<div class="content-text" grid-row="2/-1">
+						P.O Box 901278<br/>
+						Atteridgeville<br/>
+						0008
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="client">Bokgoni Technical High School</div>
+			<div class="ampersand">&amp;</div>
+			<div class="devs">UP Community Project 2017</div>
+		</div>
+	</body>
+	<script language="JavaScript" type="text/JavaScript">		
+		function myMap() {
+		    var mapOptions = {
+		        /*center: new google.maps.LatLng(-25.7643201,28.0851322),*/
+		        center: new google.maps.LatLng(-25.7646,28.0856),
+		        zoom: 17,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>
