@@ -18,9 +18,10 @@
 	-->
 	<body>
 		<div class="top">
-			<a href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
+			<a class="minimal" href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
 			<div class="name">Bokgoni Technical Secondary School</div>
-			<div class="slogan">Tsebo ke maatla</div>
+			<div class="slogan" id="slogan">Tsebo ke maatla</div>
+			<div class="fb"><a class="minimal" onclick="this.blur();" href="https://www.facebook.com/bokgonitechnical/" target="_blank" ><img class="icon" src="Assets/Resources/fb.png" alt="FB" data-toggle="tooltip" title="VISIT US" data-placement="bottom"></a></div>
 		</div>
 		<ul class="nav nav-tabs">
 			<li><a class="navbtn" href="Home.html">HOME</a></li>
@@ -34,58 +35,56 @@
 		<div class="content"> 
 			<hr class="bokgoni-hr" />
 			<div class="partnerstab">
-				<div class="achievements content-container">
-					<div class="content-heading" grid-row="1/-1">
-						Notable Achievements
+				<div class="partner content-container">
+					<div class="content-heading" grid-row="1/2">
+						Volkswagen <span class="grey">-</span> <span class="gold"> 2009</span>
 					</div>
-					<div class="content-text" grid-row="2/-1">
-						<ul class="bokgoni-ul">
-							<li>The Principal has received the Best Principal award twice.</li>
-							<li>The School has received the Best Achievers Award 5 times.</li>
-							<li>Many educators in the fields of Mathematics, Technical Drawing, Welding, Bricklaying and Plastering have been acknowledged as the best in our district (4, Tshwane South) for producing the best Matric results.</li>
-							<li>Won the Macro School of excellence awards.</li>
-						</ul>
+					<div class="partner-image" grid-row="2/3">
+						<img class="content-img" src="Assets/vw.png">
 					</div>
-				</div>
-				<div class="lowergrades content-container">
-					<div class="content-heading" grid-row="1/-1">
-						Subjects <span class="grey">-</span> <span class="gold"> Grade 8 &amp; 9</span>
-					</div>
-					<div class="content-text" grid-row="2/-1">
-						<p class="biu-intro">The following subjects are presented to learners in the junior phase:</p>
-						<ul class="bokgoni-ul">
-							<li>Sepedi</li>
-							<li>IsiZulu</li>
-							<li>English</li>
-							<li>Mathematics</li>
-							<li>Natural Sciences</li>
-							<li>Social Sciences</li>
-							<li>Technology</li>
-							<li>Arts &amp; Culture</li>
-							<li>Life Orientation</li>
-							<li>Economic &amp; Management Sciences</li>
-						</ul>
+					<div class="content-text" grid-row="3/-1">
+						<p class="partner-subheading">MONETARY CONTRIBUTION</p>
+						Bokgoni was presented with a direct monetary contribution in order to <strong>enhance infrastructure</strong> and <strong>provide educational support</strong>.
 					</div>
 				</div>
-				<div class="highergrades content-container">
-					<div class="content-heading" grid-row="1/-1">
-						Subjects <span class="grey">-</span> <span class="gold"> Grade 10, 11 &amp; 12</span>
+				<div class="partner content-container">
+					<div class="content-heading" grid-row="1/2">
+						Karlskrona <span class="grey">-</span> <span class="gold"> 2001 to Present</span>
 					</div>
-					<div class="content-text" grid-row="2/-1">
-						<p class="biu-intro">The following subjects are presented to learners in the senior phase:</p>
-						<ul class="bokgoni-ul">
-							<li>Sepedi (Home Language)</li>
-							<li>IsiZulu (Home Language)</li>
-							<li>English (First Additional Language)</li>
-							<li>Mathematics</li>
-							<li>Physical Sciences</li>
-							<li>Engineering Graphic Design</li>
-							<li>Technology (Civil, Electrical &amp; Mechanical)</li>							
-							<li>Life orientation</li>
-						</ul>
+					<div class="partner-image" grid-row="2/3">
+						<img class="content-img" src="Assets/kk.png">
+					</div>
+					<div class="content-text" grid-row="3/-1">
+						<p class="partner-subheading">ONGOING EXCHANGE PROGRAM</p>
+						Learners from Bokgoni are involved in an <strong>exchange program</strong> with the <strong>Swedish municipality</strong> of <strong>Karlskrona</strong>.
+					</div>
+				</div>
+				<div class="partner content-container">
+					<div class="content-heading" grid-row="1/2">
+						SA DAFF <span class="grey">-</span> <span class="gold"> Ongoing</span>
+					</div>
+					<div class="partner-image" grid-row="2/3">
+						<img class="content-img" src="Assets/daff.png">
+					</div>
+					<div class="content-text" grid-row="3/-1">
+						<p class="partner-subheading">GREENING OF SCHOOLS INITIATIVE - GARDENING</p>
+						The SA Department of Agriculture, Forestry &amp; Fisheries assisted with establishing a <strong>borehole</strong> and the necessary <strong>water storage infrastructure</strong>.
+					</div>
+				</div>
+				<div class="partner content-container">
+					<div class="content-heading" grid-row="1/2">
+						SA DAFF <span class="grey">-</span> <span class="gold"> Ongoing</span>
+					</div>
+					<div class="partner-image" grid-row="2/3">
+						<img class="content-img" src="Assets/daff2.png">
+					</div>
+					<div class="content-text" grid-row="3/-1">
+						<p class="partner-subheading">GREENING OF SCHOOLS INITIATIVE - RECYCLING</p>
+						The SA Department of Agriculture, Forestry &amp; Fisheries assisted with providing <strong>a series of recycling containers</strong>.
 					</div>
 				</div>
 			</div>
+			<hr class="bokgoni-hr" />
 		</div>
 		<div class="foot">
 			<div class="client">Bokgoni Technical Secondary School</div>
@@ -103,6 +102,7 @@
 		    }
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 		}
+
+		$('.icon').tooltip();
 	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </html>

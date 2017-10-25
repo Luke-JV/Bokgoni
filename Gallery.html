@@ -18,9 +18,10 @@
 	-->
 	<body>
 		<div class="top">
-			<a href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
+			<a class="minimal" href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
 			<div class="name">Bokgoni Technical Secondary School</div>
-			<div class="slogan">Tsebo ke maatla</div>
+			<div class="slogan" id="slogan">Tsebo ke maatla</div>
+			<div class="fb"><a class="minimal" onclick="this.blur();" href="https://www.facebook.com/bokgonitechnical/" target="_blank" ><img class="icon" src="Assets/Resources/fb.png" alt="FB" data-toggle="tooltip" title="VISIT US" data-placement="bottom"></a></div>
 		</div>
 		<ul class="nav nav-tabs">
 			<li><a class="navbtn" href="Home.html">HOME</a></li>
@@ -28,7 +29,7 @@
 			<li><a class="navbtn" href="Staff.html">STAFF</a></li>
 			<li><a class="navbtn" href="Academics.html">ACADEMICS</a></li>
 			<li><a class="navbtn" href="Partners.html">PARTNERS</a></li>
-			<li  class="active"><a class="navbtn" href="Gallery.html">GALLERY</a></li>
+			<li class="active"><a class="navbtn" href="Gallery.html">GALLERY</a></li>
 			<li><a class="navbtn" href="Contact.html">CONTACT</a></li>
 		</ul>
 		<div class="content">
@@ -39,128 +40,325 @@
 	  				<div class="content-text" grid-row="2/-1">
 						A window into Bokgoni Technical Secondary School. Click a thumbnail to view the full image.
 					</div>
-	  			</div> 									
-	  			<div class="content-image content-container">	  				
-	  				<img id="img-1" onclick="this.blur(); viewImage(1)" class="galleryimage" src="Assets/Galleries/1.jpg">
-	  				<div id="img-modal-1" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>	  				
 	  			</div>
-	  			<div class="content-image content-container">
-					<img id="img-2" onclick="this.blur(); viewImage(2)" class="galleryimage" src="Assets/Galleries/2.jpg">
-					<div id="img-modal-2" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				<img id="img-3" onclick="this.blur(); viewImage(3)" class="galleryimage" src="Assets/Galleries/3.jpg">
-					<div id="img-modal-3" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				<img id="img-4" onclick="this.blur(); viewImage(4)" class="galleryimage" src="Assets/Galleries/3.jpg">
-					<div id="img-modal-4" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				<img id="img-5" onclick="this.blur(); viewImage(5)" class="galleryimage" src="Assets/Galleries/2.jpg">
-					<div id="img-modal-5" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				<img id="img-6" onclick="this.blur(); viewImage(6)" class="galleryimage" src="Assets/Galleries/1.jpg">
-					<div id="img-modal-6" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">	  				
-	  				<img id="img-7" onclick="this.blur(); viewImage(7)" class="galleryimage" src="Assets/Galleries/1.jpg">
-					<div id="img-modal-7" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/1.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">	  				
-	  				<img id="img-8" onclick="this.blur(); viewImage(8)" class="galleryimage" src="Assets/Galleries/2.jpg">
-					<div id="img-modal-8" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/2.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">
-	  				<img id="img-9" onclick="this.blur(); viewImage(9)" class="galleryimage" src="Assets/Galleries/3.jpg">
-					<div id="img-modal-9" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
-	  			<div class="content-image content-container">	  				
-	  				<img id="img-10" onclick="this.blur(); viewImage(10)" class="galleryimage" src="Assets/Galleries/3.jpg">
-					<div id="img-modal-10" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-body">
-					      	<img class="modalimage" src="Assets/Galleries/3.jpg" data-dismiss="modal">
-					      </div>
-					    </div>
-					  </div>
-					</div>
-	  			</div>
+	  			<div class="album-header">ACADEMICS</div>
+		  			<!--<div class="content-image content-container">	  				
+		  				<img id="img-1" onclick="this.blur(); viewImage(1)" class="galleryimage" src="Assets/LR Image Bank/Academics/1.jpg">
+		  				<div id="img-modal-1" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/1.jpg" data-dismiss="modal">
+						      </div>
+						    </div>
+						  </div>
+						</div>	  				
+		  			</div>-->
+		  			<div class="content-image content-container">
+						<img id="img-2" onclick="this.blur(); viewImage(2)" class="galleryimage" src="Assets/LR Image Bank/Academics/2.jpg">
+						<div id="img-modal-2" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/2.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">
+		  				<img id="img-3" onclick="this.blur(); viewImage(3)" class="galleryimage" src="Assets/LR Image Bank/Academics/3.jpg">
+						<div id="img-modal-3" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/3.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">
+		  				<img id="img-4" onclick="this.blur(); viewImage(4)" class="galleryimage" src="Assets/LR Image Bank/Academics/4.jpg">
+						<div id="img-modal-4" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/4.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">
+		  				<img id="img-5" onclick="this.blur(); viewImage(5)" class="galleryimage" src="Assets/LR Image Bank/Academics/5.jpg">
+						<div id="img-modal-5" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/5.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">
+		  				<img id="img-6" onclick="this.blur(); viewImage(6)" class="galleryimage" src="Assets/LR Image Bank/Academics/6.jpg">
+						<div id="img-modal-6" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/6.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-7" onclick="this.blur(); viewImage(7)" class="galleryimage" src="Assets/LR Image Bank/Academics/7.jpg">
+						<div id="img-modal-7" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/7.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-8" onclick="this.blur(); viewImage(8)" class="galleryimage" src="Assets/LR Image Bank/Academics/8.jpg">
+						<div id="img-modal-8" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/8.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">
+		  				<img id="img-9" onclick="this.blur(); viewImage(9)" class="galleryimage" src="Assets/LR Image Bank/Academics/9.jpg">
+						<div id="img-modal-9" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/9.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-10" onclick="this.blur(); viewImage(10)" class="galleryimage" src="Assets/LR Image Bank/Academics/10.jpg">
+						<div id="img-modal-10" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/10.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-11" onclick="this.blur(); viewImage(11)" class="galleryimage" src="Assets/LR Image Bank/Academics/11.jpg">
+						<div id="img-modal-11" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/11.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-12" onclick="this.blur(); viewImage(12)" class="galleryimage" src="Assets/LR Image Bank/Academics/12.jpg">
+						<div id="img-modal-12" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Academics/12.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+	  			<div class="album-header">ACHIEVEMENTS</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-13" onclick="this.blur(); viewImage(13)" class="galleryimage" src="Assets/LR Image Bank/Achievements/1.jpg">
+						<div id="img-modal-13" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Achievements/1.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-14" onclick="this.blur(); viewImage(14)" class="galleryimage" src="Assets/LR Image Bank/Achievements/2.jpg">
+						<div id="img-modal-14" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Achievements/2.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+	  			<div class="album-header">HISTORY</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-15" onclick="this.blur(); viewImage(15)" class="galleryimage" src="Assets/LR Image Bank/History/History1.jpg">
+						<div id="img-modal-15" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/History/History1.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-16" onclick="this.blur(); viewImage(16)" class="galleryimage" src="Assets/LR Image Bank/History/History4.jpg">
+						<div id="img-modal-16" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/History/History4.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+	  			<div class="album-header">PARTNERSHIPS &amp; INITIATIVES</div>
+	  				<div class="content-image content-container">	  				
+		  				<img id="img-17" onclick="this.blur(); viewImage(17)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/1.jpg">
+						<div id="img-modal-17" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/1.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-18" onclick="this.blur(); viewImage(18)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/2.jpg">
+						<div id="img-modal-18" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/2.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-19" onclick="this.blur(); viewImage(19)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/3.jpg">
+						<div id="img-modal-19" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/3.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-20" onclick="this.blur(); viewImage(20)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/4.jpg">
+						<div id="img-modal-20" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/4.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-21" onclick="this.blur(); viewImage(21)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/5.jpg">
+						<div id="img-modal-21" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/5.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-22" onclick="this.blur(); viewImage(22)" class="galleryimage" src="Assets/LR Image Bank/Partnerships_Initiatives/6.jpg">
+						<div id="img-modal-22" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Partnerships_Initiatives/6.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+	  			<div class="album-header">STAFF</div>
+	  				<div class="content-image content-container">	  				
+		  				<img id="img-23" onclick="this.blur(); viewImage(23)" class="galleryimage" src="Assets/LR Image Bank/Staff/1.jpg">
+						<div id="img-modal-23" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Staff/1.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
+		  			<div class="content-image content-container">	  				
+		  				<img id="img-24" onclick="this.blur(); viewImage(24)" class="galleryimage" src="Assets/LR Image Bank/Staff/2.jpg">
+						<div id="img-modal-24" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      	<img class="modalimage" src="Assets/LR Image Bank/Staff/2.jpg" data-dismiss="modal">
+						      	<span class="closebtn" data-dismiss="modal" data-toggle="tooltip" title="CLOSE" data-placement="bottom">&times;</span>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		  			</div>
 			</div>
+  			<hr class="bokgoni-hr" />
 		</div>
 		<div class="foot">
 			<div class="client">Bokgoni Technical Secondary School</div>
@@ -172,6 +370,8 @@
 				var $id = id;
 				$('#img-modal-'+ $id).modal('show');
 			}
+
+			$('.icon .closebtn').tooltip();
 		</script>
 	</body>
 </html>

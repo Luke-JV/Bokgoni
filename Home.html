@@ -18,9 +18,10 @@
 	-->
 	<body>
 		<div class="top">
-			<a href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
+			<a class="minimal" href="Home.html"><img class="logo" src="Assets/Resources/crest.png" alt="Bokgoni Technical Secondary School" /></a>
 			<div class="name">Bokgoni Technical Secondary School</div>
-			<div class="slogan">Tsebo ke maatla</div>
+			<div class="slogan" id="slogan">Tsebo ke maatla</div>
+			<div class="fb"><a class="minimal" onclick="this.blur();" href="https://www.facebook.com/bokgonitechnical/" target="_blank" ><img class="icon" src="Assets/Resources/fb.png" alt="FB" data-toggle="tooltip" title="VISIT US" data-placement="bottom"></a></div>
 		</div>
 		<ul class="nav nav-tabs">
 			<li class="active"><a class="navbtn" href="Home.html">HOME</a></li>
@@ -90,7 +91,7 @@
 						Our Vision
 					</div>
 					<div class="content-text" grid-row="2/-1">
-						The vision of Bokgoni Technical Secondary School is to establish the culture of learning, teaching and assistance among learners, staff members (both teaching and non-teaching), parents/guardians and the community at large.
+						To <strong>establish the culture of learning, teaching and assistance</strong> among learners, staff members (both teaching and non-teaching), parents/guardians and the community at large.
 					</div>
 				</div>
 				<div class="mission content-container">
@@ -98,10 +99,11 @@
 						Our Mission
 					</div>
 					<div class="content-text" grid-row="2/-1">
-						To develop the intellectual, physical, social and leadership abilities of the learners. To empower the learners with the knowledge, skills and attitudes needed in order to achieve on all levels of society. To fulfill out in an educational environment which is healthy, safe, caring and simulating.
+						To <strong>develop</strong> the intellectual, physical, social and leadership abilities of the learners. To <strong>empower</strong> the learners with the knowledge, skills and attitudes needed in order to achieve on all levels of society. To <strong>fulfill</strong> out in an educational environment which is healthy, safe, caring and simulating.
 					</div>
 				</div>			  
 			</div>
+			<hr class="bokgoni-hr" />
 		</div>
 		<div class="foot">
 			<div class="client">Bokgoni Technical Secondary School</div>
@@ -117,6 +119,8 @@
 		        mapTypeId: google.maps.MapTypeId.HYBRID
 		    }
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-		}
+		}	
+
+		$('.icon').tooltip();
 	</script>
 </html>
