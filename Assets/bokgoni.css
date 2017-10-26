@@ -465,7 +465,11 @@ body {
 	display: grid !important;
 	grid-gap: 25px !important;
 	grid-template-columns:  1000px 1fr;
-	grid-template-rows: 150px 500px;	
+	grid-template-rows: 150px 500px;
+}
+
+.historytab .intro {
+	grid-auto-rows: 120px !important;
 }
 
 .historytab .bokgoni-carousel {
@@ -473,6 +477,79 @@ body {
 	grid-row: 2/-1;
 	max-width: 1000px !important;
 	margin: 0 auto 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.stafftab {
+	display: grid !important;
+	grid-gap: 25px !important;
+	grid-template-columns:  500px 1fr 750px;
+	grid-template-rows: 150px minmax(auto, 500px) !important;
+}
+
+.stafftab .intro {
+	grid-column: 3/-1 !important;
+	grid-row: 1/2 !important;
+}
+
+.stafftab .carousel-caption-top-right {
+	position: absolute;
+}
+
+.principal {
+	grid-column: 1/2;
+	grid-row: 1/3;
+
+	padding: 0 !important;
+	object-fit: cover !important;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.staff {
+	grid-column: 2/3;
+	grid-row: 1/-1;
+
+	display: grid;
+	/*align-content: center;*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+	display: grid;
+	grid-template-columns: 50px 1fr 50px;
+	grid-template-rows: 1fr;
+}
+
+.quote-open {
+	font-size: 20pt;
+	color: rgba(21, 35, 67, 0.5);
+	text-align: center;
+	display: grid;
+	align-content: flex-start;
+	/*margin-right: 150px;*/
+}
+
+.quote-content {
+	text-align: justify;
+}
+
+.quote-closed {
+	font-size: 20pt;
+	color: rgba(21, 35, 67, 0.5);
+	text-align: center;
+	display: grid;
+	align-content: flex-end;
+	/*margin-left: 150px;*/
+}
+
+.staffpic {
+	grid-column: 3/-1;
+	grid-row: 2/3;
+
+	padding: 0 !important;
+	object-fit: cover !important;
+	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -485,7 +562,7 @@ body {
 .intro .content-text {
 	font-weight: normal !important;
 	font-style: italic !important;
-	font-size: 10pt !important;
+	font-size: 12pt !important;
 	text-align: left !important;
 	padding-top: 10px !important;
 	padding-left: 25px !important;
@@ -618,14 +695,14 @@ body {
 .contacttab {
 	display: grid !important;
 	grid-gap: 25px !important;
-	grid-template-columns: 1fr 250px;
+	grid-template-columns: 1fr 350px;
 	grid-template-rows: auto auto;
 }
 
 .academicstab {
 	display: grid !important;
 	grid-gap: 25px !important;
-	grid-template-columns: 500px 1fr;
+	grid-template-columns: 500px 500px 1fr;
 	grid-template-rows: auto auto;
 }
 
@@ -702,8 +779,8 @@ body {
 
 }
 .achievements {
-	grid-column: 2/-1;
-	grid-row: 1/-1;
+	grid-column: 1/3;
+	grid-row: 1/2;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
 	display: grid;
@@ -718,12 +795,14 @@ body {
 
 .lowergrades {
 	grid-column: 1/2;
-	grid-row: 1/2;
+	grid-row: 2/-1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 55px 1fr;
+	justify-content: center !important;
+	align-content: flex-start !important;
 }
 
 .lowergrades .content-text {
@@ -732,11 +811,13 @@ body {
 }
 
 .highergrades {
-	grid-column: 1/2;
+	grid-column: 2/3;
 	grid-row: 2/-1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
 	display: grid;
+	justify-content: center !important;
+	align-content: flex-start !important;
 	grid-template-columns: 1fr;
 	grid-template-rows: 55px 1fr;
 }
@@ -744,6 +825,18 @@ body {
 .highergrades .content-text {
 	text-align: left !important;
 	padding-top:5px;
+}
+
+.collage {
+	grid-column: 3/-1;
+	grid-row: 1/-1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.collage-img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }
 
 .partnerstab {
